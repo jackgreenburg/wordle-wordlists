@@ -31,12 +31,11 @@ def save_wordlist(filename: str, wordlist: List[str]):
         for word in wordlist:
             f.write(f"{word}\n")
 
-
 def main():
     answers_old, guessable_old = get_wordlist("jan_01_wordle_snapshot.js", "Aa", "La")
     # answers_new, w = get_wordlist("apr_18_wordle_snapshot.js", "mo", "fo")
     # answers_new, w = get_wordlist("may_09_wordle_snapshot.js", "ko", "wo")
-    answers_new, guessable_new = get_wordlist("aug_08_wordle_snapshot.js", "he", "be")
+    answers_new, guessable_new = get_wordlist("aug_03_wordle_snapshot.js", "he", "be")
 
     print("old wordlist # answers:", len(answers_old))
     print("new wordlist # answers:", len(answers_new))

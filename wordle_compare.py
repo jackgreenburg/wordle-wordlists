@@ -48,7 +48,6 @@ def main():
     removed = [answer for answer in answers_old if answer not in answers_new]
     print("answers removed:", removed)
 
-
     print("old wordlist # guesses:", len(guessable_old))
     print("new wordlist # guesses:", len(guessable_new))
     # save_wordlist("guessable_old.txt", guessable_old)
